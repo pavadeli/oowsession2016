@@ -1,0 +1,9 @@
+{
+  "name": "oowsessie",
+  "dependencies": {
+    "express": "registry:npm/express#4.14.0+20160815112707"
+  },
+  "globalDependencies": {
+    "node": "registry:env/node#0.12.0+20160902022231"
+  }
+}

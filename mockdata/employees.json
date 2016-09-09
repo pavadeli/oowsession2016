@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "The Boss",
+        "job": "Boss",
+        "hiredate": "2011-04-01",
+        "salary": 100000,
+        "commission": 35000,
+        "department": 100
+    },
+    {
+        "id": 2,
+        "name": "His Righthand",
+        "job": "Hand of the Boss",
+        "manager": 1,
+        "hiredate": "2011-04-01",
+        "salary": 60000,
+        "commission": 10000,
+        "department": 100
+    },
+    {
+        "id": 3,
+        "name": "First Employee",
+        "job": "Clerk",
+        "manager": 1,
+        "hiredate": "2013-01-01",
+        "salary": 30000,
+        "department": 100
+    }
+]
