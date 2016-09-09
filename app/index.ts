@@ -12,6 +12,10 @@ express()
 
     .use('/employees', employees)
 
+    .use((req: express.Request, res: express.Response) => {
+        res.status(404).send(`Unknown request: "${req.method} ${req.url}". Try: "GET /employees".`);
+    })
+
     .listen(8080);
 
 console.log('Mock services started');

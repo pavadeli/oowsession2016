@@ -16,7 +16,7 @@ export const employees = Router()
         if (employee) {
             res.json(enrich(employee));
         } else {
-            res.status(404).send(`Employee ${id} does not exist.`).end();
+            res.status(404).send(`Employee ${req.params['id']} does not exist.`);
         }
     });
 
