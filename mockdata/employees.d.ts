@@ -3,11 +3,12 @@ declare namespace mockData {
         id: number;
         name: string;
         job: string;
-        manager: number;
+        manager?: number;
         hiredate: string;
         salary: number;
         commission: number;
         department: number;
+        votes?: number;
     }
 }
 declare const mockData: mockData.Employee[];

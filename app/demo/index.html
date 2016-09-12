@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+<body>
+    <h2>Updates:</h2>
+    <pre id="updates"></pre>
+    <script>
+        var source = new EventSource('/employees/updates');
+        source.addEventListener('message', function (msg) {
+            updates.innerText += msg.data + '\n';
+        });
+    </script>
+</body>
+
+</html>

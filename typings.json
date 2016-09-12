@@ -1,6 +1,7 @@
 {
   "name": "oowsessie",
   "dependencies": {
+    "cors": "registry:npm/cors#2.7.0+20160902012746",
     "express": "registry:npm/express#4.14.0+20160815112707"
   },
   "globalDependencies": {
