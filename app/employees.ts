@@ -58,17 +58,13 @@ function findEmployee(req: Request) {
     return find(mockEmployees, e => e.id === id);
 }
 
-function enrich({ id, name, job, hiredate, salary, commission, manager, department }: mockEmployees.Employee) {
+function enrich(emp: mockEmployees.Employee) {
+    const { id, name, job, hiredate, salary, commission, votes = 0, manager, department } = emp;
     return {
-        id,
-        name,
-        job,
-        hiredate,
-        salary,
-        commission,
+        id, name, job, hiredate, salary, commission, votes,
         manager: simplify(find(mockEmployees, e => e.id === manager)),
         subordinates: mockEmployees.filter(e => e.manager === id).map(simplify),
-        department: find(mockDepartments, d => d.id === department),
+        department: find(mockDepartments, d => d.id === department)
     };
 }
 
